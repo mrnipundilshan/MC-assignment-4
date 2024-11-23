@@ -16,3 +16,5 @@ export const animals=[
     {name:'hen',img:'15.jpg'},
     {name:'deer',img:'16.jpg'}
 ];
+
+export default animals;

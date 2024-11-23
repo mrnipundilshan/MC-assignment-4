@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import { animals } from './compononts/AnimalsDb';
 
 function App() {
+  const [randomAnimal, seRandomAnimal] = useState(getRandomAnimal());
+  const[result, setResult] = useState("");
+
+  function getRandomAnimal() {
+    const randomIndex = Math.floor(Math.random() * animals.length);
+    return animals[randomIndex].name;
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <table>
+        
+      </table>
     </div>
   );
 }
