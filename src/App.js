@@ -29,13 +29,24 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="body">
      <div className='top-container'>
       <h1>Animal Matching Game</h1>
      </div>
+    
+     <div className='main-one'>
 
-     
-    </div>
+     <div className='left-container'>
+     </div>
+
+     <div class Name='mid-container'>
+     </div>
+
+     <div className='right-container'>
+     </div>
+
+     </div>  
+     </div>
   );
 }
 
