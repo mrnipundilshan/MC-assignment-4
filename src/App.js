@@ -10,7 +10,18 @@ function App() {
     const randomIndex = Math.floor(Math.random() * animals.length);
     return animals[randomIndex].name;
   }
+
+  const handleAnimalClick = (clickedAninmal) =>{
+    if(clickedAninmal === randomAnimal){
+      setResult("Win");
+    }
+    else{
+      setResult("Lose");
+    }
+  }
+
   
+
   return (
     <div className="App">
       <table>
