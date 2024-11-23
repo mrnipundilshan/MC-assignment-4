@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.top-container {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 2px solid chocolate; 
+  border-radius: 10px;
+  width: 100%; 
+  height: 10vh;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -11,7 +11,7 @@ function App() {
     return animals[randomIndex].name;
   }
 
-  const handleAnimalClick = (clickedAninmal) =>{
+  function handleAnimalClick(clickedAninmal){
     if(clickedAninmal === randomAnimal){
       setResult("Win");
     }
@@ -20,13 +20,21 @@ function App() {
     }
   }
 
-  
+  function resetGame(){
+    seRandomAnimal(getRandomAnimal());
+    setResult("");
+  }
+
+
+
 
   return (
     <div className="App">
-      <table>
-        
-      </table>
+     <div className='top-container'>
+      <h1>Animal Matching Game</h1>
+     </div>
+
+     
     </div>
   );
 }
